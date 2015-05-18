@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <title>Leancamp Germany | Salim Virani, Dan Toma, Daniel Bartel & Rui Lun Tran</title>
+      <meta name="description" content="Get actionable feedback on your current challenges! Discover new approaches and extend your network!">
+      <meta name="keywords" content="Leancamp Frankfurt Rhein Main Desig Lean Startup LeanStartup">
+      <meta name="author" content="Rui Lun Tran">
+
+      <meta property="og:url" content="http://www.leancamp.net">
+      <meta property="og:image" content="http://leancamp.net/img/fbcover.jpg">
+      <meta property="og:title" content="Leancamp | Salim Virani, Dan Toma, Daniel Bartel & Rui Lun Tran">
+      <meta property="og:description" content="Get actionable feedback on your current challenges! Discover new approaches and extend your network!">
+      <meta property="website" content="Website">
+      <meta property="og:author" content="Rui Lun Tran">
+
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css"  href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css"  href="../css/style.css">
+  </head>
+  <body>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel"><img src="img/logo.svg" width="150px"></h4>
+                  </div>
+                  <div class="modal-body">
+                      <div class="modalImprint">
+                          <h3>Impressum</h3>
+                          <h4>Angaben gemäß § 5 TMG:</h4>
+                          <p>Leancamp GbR<br />
+                              Beim Wasserturm 3<br />
+                              71332 Waiblingen
+                          </p>
+                          <h4>Vertreten durch:</h4>
+                          <p>
+                              Salim Virani,<br />Dan Toma,<br />Daniel Bartel,<br />Rui Lun Tran
+                          </p>
+                          <h4>Kontakt:</h4>
+                          <table><tr>
+                              <td>Telefon:</td>
+                              <td>+49 (0) 172 588 57 04</td></tr>
+                              <tr><td>E-Mail:</td>
+                                  <td>hello@leancamp.net</td>
+                              </tr></table>
+                          <h4>Umsatzsteuer-ID:</h4>
+                          <p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br />
+
+                          </p>
+                          <p>Quelle: <em><a rel="nofollow" href="http://www.e-recht24.de/impressum-generator.html">http://www.e-recht24.de</a></em></p>
+                          <br>
+                          <br>
+                          <h3>Haftungsausschluss (Disclaimer)</h3>
+                          <h4>Haftung für Inhalte</h4>
+                          <p>
+                              Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+                          </p>
+                          <h4>Haftung für Links</h4>
+                          <p>
+                              Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+                          </p>
+                          <h4>Urheberrecht</h4>
+                          <p>
+                              Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+                          </p>
+
+                      </div>
+                      <div class="modalPrivacy">
+                          <h3>Datenschutzerklärung:</h3>
+                          <h4>Datenschutz</h4>
+                          <p>
+                              Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. </p> <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+                      </p>
+                          <p>
+                              Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
+                          </p>
+                          <h4>Datenschutzerklärung für die Nutzung von Google Analytics</h4>
+                          <p>
+                              Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. ("Google"). Google Analytics verwendet sog. "Cookies", Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt.</p>
+                          <p>
+                              Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt.
+                          </p>
+                          <p>
+                              Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: <a href="http://tools.google.com/dlpage/gaoptout?hl=de">http://tools.google.com/dlpage/gaoptout?hl=de</a>.
+                          </p>
+                          <h4>Datenschutzerklärung für die Nutzung von Twitter</h4>
+                          <p>
+                              Auf unseren Seiten sind Funktionen des Dienstes Twitter eingebunden. Diese Funktionen werden angeboten durch die Twitter Inc., Twitter, Inc. 1355 Market St, Suite 900, San Francisco, CA 94103, USA. Durch das Benutzen von Twitter und der Funktion "Re-Tweet" werden die von Ihnen besuchten Webseiten mit Ihrem Twitter-Account verknüpft und anderen Nutzern bekannt gegeben. Dabei werden auch Daten an Twitter übertragen.</p> <p>Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Twitter erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Twitter unter <a href="http://twitter.com/privacy" target="_blank">http://twitter.com/privacy</a>.
+                      </p>
+                          <p>
+                              Ihre Datenschutzeinstellungen bei Twitter können Sie in den Konto-Einstellungen unter <a href="http://twitter.com/account/settings" target="_blank">http://twitter.com/account/settings</a> ändern.
+                          </p>
+                      </div>
+                      <div class="modalSuccess"></div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="rt-btn" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-62318890-1', 'auto');
+          ga('send', 'pageview');
+
+      </script>
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="logo"></a>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#tf-home" class="page-scroll links">Home</a></li>
+            <li><a href="#tf-about" class="page-scroll links">About</a></li>
+            <li><a href="#tf-services2" class="page-scroll links">Events</a></li>
+            <li><a href="#tf-works" class="page-scroll links">Get Tickets</a></li>
+            <li><a href="#tf-team" class="page-scroll links">Team</a></li>
+            <li><a href="#tf-clients" class="page-scroll links">Sponsors & Partners</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Page
+    ==========================================-->
+    <div id="tf-home" class="text-center">
+        <div class="overlay" id="landingpage">
+            <div class="content">
+                <h1 class="white">1st <strong><span class="color">Leancamp</span> Frankfurt Rhein Main</strong></h1>
+                <p class="lead">10th October 2015</p>
+                <a href="#tf-works" class="page-scroll rt-btn btn-bg-lc">Get a Ticket now!</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Page
+    ==========================================-->
+    <div id="tf-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/1ACQ7TEwgos?controls=2" frameborder="0" allowfullscreen style="margin-top:50px"></iframe>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <div class="space"></div>
+                    <div class="about-text">
+                        <div class="section-title">
+                            <h2>Some words about <strong>Leancamp</strong></h2>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro">
+                            Leancamp is an open, interactive, high-energy multi-track event – which brings together established corporations and startups to exchange knowhow and learnings. Everyone has the power to drive the event’s agenda, to contribute their experience, and to interact with the thought-leaders and experienced founders who are creating faster ways to get traction. Since participants drive the topics based on their needs, Leancamp is more timely and relevant than traditional conference formats.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section
+    ==========================================-->
+    <div id="tf-services2" class="text-center">
+        <div class="container">
+            <div class="section-title center">
+                <h2><strong>Events</strong></h2>
+                <div class="line"></div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="space"></div>
+            <div class="row">
+                <!--########################################################
+                  1st Leancamp Frankfurt Rhein Main
+               ######################################################## -->
+                <div class="col-md-9 text-left">
+                    <h3>1st Leancamp Frankfurt Rhein Main</h3>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6">
+                            <div class="date">
+                                <h5>Date</h5>
+                                <table>
+                                    <tr>
+                                        <td class="event-icons"><span class="fa fa-calendar"></span></td>
+                                        <td>Saturday, October 10, 2015</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="event-icons"><span class="fa fa-clock-o"></span></td>
+                                        <td>9.00 am to 5 pm</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="space"></div>
+                            <div class="venue">
+                                <h5>Venue</h5>
+                                <table>
+                                    <tr>
+                                        <td class="vertical-align-top event-icons"><span class="fa fa-home"></span></td>
+                                        <td>
+                                            Matrix42 AG<br>
+                                            Elbinger Straße 7<br>
+                                            60487 Frankfurt am Main<br>
+                                            Germany
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <div class="schedule">
+                                <h5>Schedule</h5>
+                                <table>
+                                    <tr>
+                                        <td class="vertical-align-top schedule-time">9.30 am</td>
+                                        <td>Registration</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vertical-align-top schedule-time">10 am</td>
+                                        <td>Session planning</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vertical-align-top schedule-time">10.45 am</td>
+                                        <td>Sessions</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vertical-align-top schedule-time">12.15 am</td>
+                                        <td>Lunch</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vertical-align-top schedule-time">1 pm</td>
+                                        <td>Sessions</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vertical-align-top schedule-time">2 pm</td>
+                                        <td>Coffee Break</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vertical-align-top schedule-time">2.30 pm</td>
+                                        <td>2. Session planning</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vertical-align-top schedule-time">3 pm</td>
+                                        <td>Sessions</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vertical-align-top schedule-time">5 pm</td>
+                                        <td>Wrap-up and event closing</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                    <div class="ambassadors text-left">
+                        <h5>Ambassadors</h5>
+                        <div class="space"></div>
+                        <div class="row text-left">
+                            <div class="col-md-3 col-sm-6 text-center">
+                               tba
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 hidden-xs">
+                    <div class="row text-left">
+                        <div class="col-md-12 panel panel-default">
+                            <h4>Upcoming Events</h4>
+                            <ul class="list-unstyled">
+                                <li><a id="4th">4th Leancamp Stuttgart</a></li>
+                            </ul>
+                            <hr>
+                            <h4>Past Events</h4>
+                            <ul class="list-unstyled">
+                                <li><a id="3rd">3rd Leancamp Stuttgart</a></li>
+                                <li><a id="2nd">2nd Leancamp Stuttgart</a></li>
+                                <li><a id="1st">1st Leancamp Stuttgart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section
+    ==========================================-->
+    <div id="tf-works">
+        <div class="container"> <!-- Container -->
+            <div class="section-title text-center center">
+                <h2>Get the <strong>Tickets</strong> now!</h2>
+                <div class="line"></div>
+                <div class="clearfix"></div>
+                <div class="space"></div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div style="width:100%; text-align:left;" >
+                            <iframe src="http://www.eventbrite.com/tickets-external?eid=16738094090" frameborder="0" height="300px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Page
+    ==========================================-->
+    <div id="tf-team" class="text-center">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title center">
+                    <h2>Meet the<strong> team</strong></h2>
+                    <div class="line"></div>
+                </div>
+                <div class="space"></div>
+                <div class="row">
+                    <div class="col-md-2 col-xs-6 minHeight">
+                        <img src="img/organisation/PaulHerwarthVonBittenfeld.jpg" class="img-circle team-img">
+                        <h3>Paul Herwarth von Bittenfeld</h3>
+                    </div>
+                    <div class="col-md-2 col-xs-6 minHeight">
+                        <img src="img/organisation/AlexanderBoerger.jpeg" class="img-circle team-img">
+                        <h3>Alexander Boerger</h3>
+                    </div>
+                    <div class="col-md-2 col-xs-6 minHeight">
+                        <img src="img/organisation/ChristianeGerigk.jpg" class="img-circle team-img">
+                        <h3>Christine Gerigk</h3>
+                    </div>
+                    <div class="col-md-2 col-xs-6 minHeight">
+                        <img src="img/organisation/KarolinKutter.jpg" class="img-circle team-img">
+                        <h3>Karolin Kutter</h3>
+                    </div>
+                    <div class="col-md-2 col-xs-6 minHeight">
+                        <img src="img/organisation/JoachimSchirrmacher.jpg" class="img-circle team-img">
+                        <h3>Joachim Schirrmacher</h3>
+                    </div>
+                    <div class="col-md-2 col-xs-6 minHeight">
+                        <img src="img/organisation/StefanGörgner.jpg" class="img-circle team-img">
+                        <h3>Stefan G&ouml;rgner</h3>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Clients Section
+    ==========================================-->
+    <div id="tf-clients" class="text-center">
+            <div class="container">
+                <div class="section-title center">
+                    <h2><strong>Sponsors & Partners</strong></h2>
+                    <div class="line"></div>
+                </div>
+                <div class="space"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/SponsorsAndPartners/Matrix42.gif" class="sponsor">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/SponsorsAndPartners/SeibertMedia.svg" class="sponsor" style="margin-top: 35px">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/SponsorsAndPartners/Atlassian.png" class="sponsor">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <nav id="footer">
+          <div class="container">
+              <div class="pull-left fnav">
+                  <p class="white">ALL RIGHTS RESERVED. COPYRIGHT © 2014. Leancamp™ its logos are trademarks of Salim Virani. Designed and coded by <nobr>Rui Lun Tran</nobr> &nbsp;&nbsp;&nbsp;<a id="imprint">Imprint</a>&nbsp;&nbsp;&nbsp;<a id="privacy">Privacy</a>
+              </div>
+              <div class="pull-right fnav">
+                  <ul class="footer-social">
+                      <li><a href="https://www.facebook.com/Leancamp" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="https://twitter.com/leancamp" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+
+      <script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+
+  </body>
+</html>
