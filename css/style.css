@@ -713,6 +713,6 @@ nav#footer p{
 
 /** HIDE UNFINISHED SECTIONS **/
 
-.tf-contact, .tf-team {
+#tf-contact, #tf-team {
     display: none;
 }
