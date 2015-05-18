@@ -710,3 +710,9 @@ nav#footer p{
 	width: 100px;
 	margin-right: 5px;
 }
+
+/** HIDE UNFINISHED SECTIONS **/
+
+.tf-contact, .tf-team {
+    display: none;
+}
