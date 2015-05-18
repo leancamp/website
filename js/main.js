@@ -7,8 +7,8 @@ $(document).ready(function(){
 
 
 $('#selectBtn').on('click', function (){
-    window.location.href = "http://leancamp.us1.list-manage2.com/subscribe?u=85c6ba2a410b1e10aefd30ebc&id=f0e722643f&MERGE2=".$('#selector').find(":selected").text();
-});
+    window.location.href = "http://leancamp.us1.list-manage2.com/subscribe?u=85c6ba2a410b1e10aefd30ebc&id=f0e722643f&MERGE2="+$('#selector').find(":selected").text();
+ });
 
 $('#imprint').on('click', function () {
     hideAllModal();
